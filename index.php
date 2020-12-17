@@ -123,7 +123,7 @@
             ]; ?>/2020/12/product-image1.png.webp" alt="ナギサガス">
             <img src="<?php echo $upload_dir[
               'baseurl'
-            ]; ?>/2020/12/product-image2-1.png.webp" alt="ナギサガス">
+            ]; ?>/2020/12/product-image2.png.webp" alt="ナギサガス">
         </div>
         <img src="<?php echo $upload_dir[
           'baseurl'
