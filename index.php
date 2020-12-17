@@ -3,9 +3,7 @@
 
 <div class="hero-image">
     <div class="hero-image-title">
-        <img src="<?php echo $upload_dir[
-          'baseurl'
-        ]; ?>/2020/12/heading_hero-1.svg" alt="ガスのちからで毎日の暮らしを安全・快適に " class="for_pc">
+        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_hero.svg" alt="ガスのちからで毎日の暮らしを安全・快適に " class="for_pc">
         <img src="<?php echo $upload_dir[
           'baseurl'
         ]; ?>/2020/12/hero-image-title-sp.svg" alt="ガスのちからで毎日の暮らしを安全・快適に " class="for_sp">
@@ -90,7 +88,7 @@
     <div class="advantage-title">
         <img src="<?php echo $upload_dir[
           'baseurl'
-        ]; ?>/2020/12/heading_advantage-1.svg" alt="ナギサガスフィッティングスの安心施工" class="for_pc">
+        ]; ?>/2020/12/heading_advantage.svg" alt="ナギサガスフィッティングスの安心施工" class="for_pc">
         <img src="<?php echo $upload_dir[
           'baseurl'
         ]; ?>/2020/12/advantage-title-sp.svg" alt="ナギサガスフィッティングスの安心施工" class="for_sp">
@@ -118,7 +116,7 @@
     <div class="product-header">
         <img src="<?php echo $upload_dir[
           'baseurl'
-        ]; ?>/2020/12/heading_product-1.svg" alt="私達はガス機器から水回りまで幅広く手掛けけています" class="for_pc">
+        ]; ?>/2020/12/heading_product.svg" alt="私達はガス機器から水回りまで幅広く手掛けけています" class="for_pc">
         <div class="product-header-image">
             <img src="<?php echo $upload_dir[
               'baseurl'
@@ -186,7 +184,7 @@
     <div class="news-header">
         <img src="<?php echo $upload_dir[
           'baseurl'
-        ]; ?>/2020/12/heading_news-1.svg" alt="私達の最近の歩みを紹介します" class="for_pc">
+        ]; ?>/2020/12/heading_news.svg" alt="私達の最近の歩みを紹介します" class="for_pc">
         <img src="<?php echo $upload_dir[
           'baseurl'
         ]; ?>/2020/12/news-title-image.svg" alt="ナギサガス" class="news-header-image for_pc">
@@ -249,7 +247,7 @@
         <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-header-image2.png.webp" alt="累計8000件">
     </div>
     <div class="works-title">
-        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works-1.svg" alt="私達の施工実績の一部をご紹介します">
+        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works.svg" alt="私達の施工実績の一部をご紹介します">
         <div class="works-title-photo">
             <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-title-image-sp.png.webp" alt="私達の施工実績の一部をご紹介します" class="for_sp">
         </div>
