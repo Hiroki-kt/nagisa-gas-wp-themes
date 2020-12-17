@@ -14,9 +14,7 @@
             <p>無料見積もりはこちら<i class="fas fa-play "></i></p>
         </a>
     </div>
-    <img src="<?php echo $upload_dir[
-      'baseurl'
-    ]; ?>/2020/12/hero-image-sep.svg" alt="we are nagisa gas" class="hero-image-sep for_pc">
+    <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/hero-image-sep.svg" alt="we are nagisa gas" class="hero-image-sep for_pc">
     <div class="hero-image-photo-box">
         <img
             src="<?php echo $upload_dir['baseurl']; ?>/2020/12/hero-image-photo.jpg.webp"
@@ -49,10 +47,10 @@
                 </li>
             </ul>
         </div>
+        <a href="<?php echo home_url(); ?>/inquiry/" class="contact-button hero-image-contact-button for_sp">
+            <p>無料見積もりはこちら<i class="fas fa-play "></i></p>
+        </a>
     </div>
-    <a href="<?php echo home_url(); ?>/inquiry/" class="contact-button hero-image-contact-button for_sp">
-        <p>無料見積もりはこちら<i class="fas fa-play "></i></p>
-    </a>
     <div class="top-news for_sp">
         <?php $args = [
         'post_type' => 'news',
