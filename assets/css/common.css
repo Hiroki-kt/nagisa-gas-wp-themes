@@ -5,9 +5,9 @@
 --------------------------------------------*/
 body,
 html {
-  font-family: '游ゴシック', 'YuGothic', '游ゴシック体', 'Hiragino Sans',
-    'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic Pro, Hiragino Kaku Gothic ProN,
-    Arial, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family: "游ゴシック", "YuGothic", "游ゴシック体", "Hiragino Sans",
+    "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic Pro, Hiragino Kaku Gothic ProN,
+    Arial, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 500;
   -webkit-text-size-adjust: 100%;
 }
@@ -35,36 +35,36 @@ img {
 	 FONTS
 --------------------------------------------*/
 @font-face {
-  font-family: 'futura'; /* 任意につけれる */
+  font-family: "futura"; /* 任意につけれる */
   src: url(../font/futura.ttf); /* パスを指定 */
 }
 @font-face {
-  font-family: 'helvetica'; /* 任意につけれる */
+  font-family: "helvetica"; /* 任意につけれる */
   src: url(../font/HelveticaNeue.ttf); /* パスを指定 */
 }
 @font-face {
-  font-family: 'montserrat-bold';
-  src: url('../font/Montserrat-Bold.woff');
+  font-family: "montserrat-bold";
+  src: url("../font/Montserrat-Bold.woff");
   /* font-weight: normal;
   font-style: normal; */
 }
 @font-face {
-  font-family: 'montserrat-semibold';
-  src: url('../font/Montserrat-SemiBold.woff');
+  font-family: "montserrat-semibold";
+  src: url("../font/Montserrat-SemiBold.woff");
   /* font-weight: normal;
   font-style: normal; */
 }
 .futura {
-  font-family: 'futura';
+  font-family: "futura";
 }
 .helvetica {
-  font-family: 'helvetica';
+  font-family: "helvetica";
 }
 .notosans {
-  font-family: 'Noto Sans Japanese';
+  font-family: "Noto Sans Japanese";
 }
 .MillGoudy {
-  font-family: 'Sorts Mill Goudy';
+  font-family: "Sorts Mill Goudy";
 }
 /*--------------------------------------------
 	 HOVER STYLE
@@ -100,14 +100,14 @@ a {
 	GLOBAL CSS
 --------------------------------------------*/
 .cf:after {
-  content: '';
+  content: "";
   clear: both;
   display: block;
   height: 0;
 }
 :root .cf::after {
   /* IE9 */
-  content: '' \9;
+  content: "" \9;
   clear: both\9;
   display: block\9;
   height: 0\9;
@@ -243,12 +243,12 @@ a {
 }
 .ttl_01 .eng {
   color: #fe7b07;
-  font-family: 'Sorts Mill Goudy';
+  font-family: "Sorts Mill Goudy";
   font-size: 24px;
 }
 .ttl_01 .eng:before,
 .ttl_01 .eng:after {
-  content: '';
+  content: "";
   width: 36px;
   display: inline-block;
   vertical-align: middle;
@@ -263,7 +263,7 @@ a {
 .ttl_01 .jpn {
   text-align: center;
   font-size: 28px;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 0.08em;
 }
 .flex {
@@ -279,7 +279,7 @@ a {
 .ofi {
   height: 100%;
   object-fit: cover;
-  font-family: 'object-fit: cover;';
+  font-family: "object-fit: cover;";
 }
 .swiper-wrapper {
   height: fit-content;
@@ -290,7 +290,8 @@ a {
 #header {
 }
 #header .hdrInner {
-  max-width: 1100px;
+  width: 90vw;
+  max-width: 1400px;
   margin: 0 auto;
 }
 #header .upper {
@@ -369,13 +370,14 @@ a {
   display: flex;
 }
 #gNavi ul .gNavi_list {
-  font-size: 14px;
+  font-size: 17px;
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
   font-weight: bold;
   padding: 0 0 0;
   border-bottom: 0 solid #f96100;
   margin-left: 20px;
   box-sizing: border-box;
-  width: 110px;
+  width: 140px;
   height: 110px;
 }
 #gNavi ul .gNavi_list > a {
@@ -444,7 +446,7 @@ a {
 }
 #gNavi ul li .eng {
   color: #fe7b07;
-  font-family: 'Sorts Mill Goudy';
+  font-family: "Sorts Mill Goudy";
   line-height: 1;
   white-space: nowrap;
 }
@@ -471,7 +473,7 @@ a {
   position: relative;
 }
 #gNavi .gNavi_sub .sub_list a:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 1px;
@@ -488,7 +490,7 @@ a {
   font-weight: bold;
 }
 #gNavi .gNavi_sub .menuTtl span {
-  font-family: 'Sorts Mill Goudy';
+  font-family: "Sorts Mill Goudy";
   font-size: 14px;
   font-weight: bold;
   color: #fe7b07;
@@ -555,7 +557,7 @@ a {
 	FOOTER
 --------------------------------------------*/
 #footer {
-  padding: 80px 0;
+  padding: 24px 0;
   background: #fe7b07;
 }
 #ftrInner {
@@ -638,8 +640,8 @@ a {
   color: #fff;
 }
 .totop a:before {
-  font-family: 'Font Awesome 5 Free';
-  content: '\f077';
+  font-family: "Font Awesome 5 Free";
+  content: "\f077";
   font-weight: 900;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -802,8 +804,8 @@ a {
     display: inline-block;
     position: absolute;
     right: 20px;
-    content: '\f067';
-    font-family: 'Font Awesome 5 Free';
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
     font-weight: bold;
     width: 20px;
     font-size: 17px;
@@ -812,7 +814,7 @@ a {
     border: none;
   }
   .trigger.open:after {
-    content: '\f068';
+    content: "\f068";
   }
   .trigger + ul {
     box-sizing: content-box;
@@ -825,8 +827,8 @@ a {
     display: inline-block;
     position: absolute;
     right: 20px;
-    content: '\f067';
-    font-family: 'Font Awesome 5 Free';
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
     font-weight: bold;
     width: 20px;
     font-size: 17px;
@@ -836,7 +838,7 @@ a {
     margin-top: -5px;
   }
   .drawer-dropdown.open span:after {
-    content: '\f068';
+    content: "\f068";
   }
   .drawer-dropdown.open {
     border-bottom: solid 1px #fe7b07;
