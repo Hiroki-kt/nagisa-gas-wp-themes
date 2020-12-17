@@ -348,7 +348,7 @@
 								<span class="jpn">施工実績</span>
 								<span class="eng">works</span></a>
 							</li>
-							<li class="gNavi_list">
+							<li class="gNavi_list gNavi_list-contact">
 								<a href="<?php echo home_url(); ?>/inquiry/" id="gnavi_contact" class="gnavi-tel">
 								<span class="jpn">無料見積り<br>お問い合わせ</span>
 								<span class="eng">Contact</span></a>

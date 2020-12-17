@@ -380,6 +380,9 @@ a {
   width: 140px;
   height: 110px;
 }
+#gNavi ul .gNavi_list-contact {
+  width: 180px;
+}
 #gNavi ul .gNavi_list > a {
   padding: 30px 5px 28px;
   /* background: url(../../../../uploads/gnavi_home.png.webp) center top no-repeat; */

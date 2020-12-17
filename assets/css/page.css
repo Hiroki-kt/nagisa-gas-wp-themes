@@ -457,6 +457,13 @@
   margin-bottom: 30px;
   width: 50%;
 }
+.post-categories li {
+  width: 100%;
+  text-align: center;
+}
+.post-categories > a {
+  display: none;
+}
 .works-article-box {
   width: 200px;
 }
