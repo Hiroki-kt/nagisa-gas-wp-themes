@@ -87,9 +87,9 @@
         <img src="<?php echo $upload_dir[
           'baseurl'
         ]; ?>/2020/12/heading_advantage.svg" alt="ナギサガスフィッティングスの安心施工" class="for_pc">
-        <img src="<?php echo $upload_dir[
-          'baseurl'
-        ]; ?>/2020/12/advantage-title-sp.svg" alt="ナギサガスフィッティングスの安心施工" class="for_sp">
+        <div class="advantage-title-sp for_sp">
+            <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/advantage-title-sp.svg" alt="ナギサガスフィッティングスの安心施工">
+        </div>
         <div class="advantage-caption">
             <p class="advantage-caption-abst">他社で断られた作業でも一度ご相談下さい！ご希望であれば、女性スタッフ同行でお伺いいたします</p>
             <p class="advantage-caption-detail">ベテランスタッフが多数在籍しており、確かな品質と安全な作業をご提供いたします。また、当社の作業員は大手ガス会社にてお客様対応研修を終えておりますので、お客様のご要望・ご不安を取り除いてから作業に取り掛からせて頂きます。
@@ -118,10 +118,10 @@
         <div class="product-header-image">
             <img src="<?php echo $upload_dir[
               'baseurl'
-            ]; ?>/2020/12/product-image1.png.webp" alt="ナギサガス">
+            ]; ?>/2020/12/product-image1.png.webp" alt="ナギサガス" class="product-image-left">
             <img src="<?php echo $upload_dir[
               'baseurl'
-            ]; ?>/2020/12/product-image2.png.webp" alt="ナギサガス">
+            ]; ?>/2020/12/product-image2.png.webp" alt="ナギサガス" class="product-image-right">
         </div>
         <img src="<?php echo $upload_dir[
           'baseurl'
