@@ -274,12 +274,13 @@
 .product-item-detail {
   padding-top: 25px;
   line-height: 40px;
+  font-size: 18px;
 }
 .news {
   margin: 0 auto;
   max-width: 1400px;
   width: 90vw;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 .news-header {
   display: flex;
@@ -291,11 +292,12 @@
 }
 .news-content {
   margin-top: 80px;
-  margin-left: 60px;
 }
 .news-list {
   position: relative;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
   height: 540px;
   list-style: none outside;
@@ -305,7 +307,7 @@
   width: 588px;
   height: 343px;
   top: 40%;
-  left: 47%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -314,25 +316,24 @@
   background-image: url(../../../../uploads/2020/12/news-separate-border.svg);
 }
 .news-list li {
-  display: table-cell;
+  display: block;
   padding: 0;
   height: 180px;
-  padding-bottom: 100px;
-  float: left;
-  width: 50%;
+  margin-bottom: 100px;
+  width: 45%;
 }
 .news-article-box {
   display: flex;
 }
 .news-article-box img {
-  width: 150px;
-  height: 180px;
+  width: 240px;
+  height: 170px;
+  border: 4px solid #d95920;
+  margin-right: 64px;
   object-fit: cover;
-  clip-path: circle(70px at 70px 90px);
 }
 .news-article-text {
   padding-left: 20px;
-  padding-right: 50px;
 }
 .news-date {
   color: #0e376f;
@@ -346,14 +347,12 @@
   height: 92px;
   font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
 }
-.news-category {
-  padding-top: 20px;
-}
 .post-categories {
-  width: 104px;
+  display: flex;
+  width: fit-content;
   height: 36px;
   background-color: #0e376f;
-  border-radius: 5px;
+  border-radius: 18px;
 }
 .open-info .post-categories {
   background-color: #d97520;
@@ -392,7 +391,6 @@
   max-width: 1400px;
   width: 90vw;
   margin-top: 104px;
-  margin-bottom: 150px;
   display: flex;
 }
 .works-title {
@@ -441,27 +439,32 @@
 }
 .works-content {
   margin-top: 30px;
-  width: 450px;
   margin-left: 40px;
+  width: calc(90vw - 600px);
 }
 .works-list {
   position: relative;
-  display: table;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   left: 40px;
   width: 100%;
   list-style: none outside;
 }
 .works-list li {
-  display: table-cell;
+  display: block;
   padding: 0;
   margin-bottom: 30px;
-  float: left;
   width: 50%;
 }
+.works-article-box {
+  width: 200px;
+}
 .works-article-box img {
-  width: 180px;
+  width: 200px;
   height: 200px;
   object-fit: cover;
+  border: 4px solid #d95920;
 }
 .works-content-title {
   font-size: 24px;

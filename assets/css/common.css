@@ -557,11 +557,12 @@ a {
 	FOOTER
 --------------------------------------------*/
 #footer {
+  margin-top: 104px;
   padding: 24px 0;
   background: #fe7b07;
 }
 #ftrInner {
-  max-width: 1100px;
+  max-width: 1200px;
   min-width: 1000px;
   margin: 0 auto;
   padding: 0 10px;
@@ -589,6 +590,8 @@ a {
 }
 #ftrNav li {
   margin: 0 0 5px;
+  font-size: 20px;
+  color: #fff;
 }
 #ftrNav li.subs {
   margin: 0 0 2px;
