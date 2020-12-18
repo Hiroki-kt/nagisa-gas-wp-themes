@@ -245,7 +245,8 @@
         <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-header-image2.png.webp" alt="累計8000件">
     </div>
     <div class="works-title">
-        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works.svg" alt="私達の施工実績の一部をご紹介します">
+        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works.svg" alt="私達の施工実績の一部をご紹介します" class="for_pc">
+        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-title-sp.svg" alt="私達の施工実績の一部をご紹介します" class="for_sp">
         <div class="works-title-photo">
             <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-title-image-sp.png.webp" alt="私達の施工実績の一部をご紹介します" class="for_sp">
         </div>

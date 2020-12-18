@@ -26,7 +26,7 @@
     left: -12px;
     z-index: 3;
     background-color: #d97520;
-    content: "";
+    content: '';
   }
   .hero-image-photo-box::after {
     width: 146px;
@@ -65,7 +65,7 @@
     right: 0;
     z-index: 3;
     background-color: #d97520;
-    content: "";
+    content: '';
   }
   .top-news-box a {
     color: #ffffff;
@@ -97,7 +97,7 @@
     height: 126px;
     top: 50px;
     right: 20px;
-    content: "";
+    content: '';
     background-image: url(../../../../uploads/2020/12/news-bg-sp.svg);
   }
   .top-photo-area .top-date-box {
@@ -127,13 +127,13 @@
     width: 270px;
     height: 1px;
     background-color: #ffffff;
-    content: "";
+    content: '';
   }
   .top-news-year {
     font-size: 16px;
     line-height: 16px;
     color: #ffffff;
-    font-family: "montserrat-bold";
+    font-family: 'montserrat-bold';
     padding: 0;
     margin: 0;
     text-align: center;
@@ -142,7 +142,7 @@
     font-size: 32px;
     line-height: 32px;
     color: #ffffff;
-    font-family: "montserrat-bold";
+    font-family: 'montserrat-bold';
     padding: 0;
     margin: 0;
     text-align: center;
@@ -151,7 +151,7 @@
     font-size: 16px;
     line-height: 16px;
     color: #ffffff;
-    font-family: "montserrat-bold";
+    font-family: 'montserrat-bold';
     padding: 0;
     margin: 0;
     text-align: center;
@@ -178,7 +178,7 @@
     height: 20px;
     bottom: -55px;
     left: 0;
-    content: "";
+    content: '';
     background-color: #d97520;
   }
   .advantage-caption {
@@ -192,7 +192,7 @@
     height: 430px;
     top: 170px;
     left: -20px;
-    content: "";
+    content: '';
     z-index: -1;
     background-color: #0e376f;
   }
@@ -203,7 +203,7 @@
     top: 120px;
     right: -20px;
     z-index: -1;
-    content: "";
+    content: '';
     background-color: #d97520;
   }
   .advantage-caption::before {
@@ -215,7 +215,7 @@
     height: 20px;
     bottom: -147px;
     left: -40px;
-    content: "";
+    content: '';
     background-color: #d97520;
   }
   .advantage-caption-abst {
@@ -253,7 +253,7 @@
     height: 20px;
     bottom: -30px;
     left: 0;
-    content: "";
+    content: '';
     background-color: #d97520;
   }
   .product-header::after {
@@ -263,7 +263,7 @@
     top: 210px;
     right: -20px;
     z-index: -3;
-    content: "";
+    content: '';
     background-color: #f5f5f5;
   }
   .product-image-left {
@@ -346,15 +346,18 @@
     max-width: 400px;
     margin-top: 90px;
   }
-  .news-article-box img {
-    width: 240px;
-    height: 101px;
-    object-fit: cover;
-    clip-path: none;
-  }
   .news-header {
     display: block;
     max-width: 100%;
+  }
+  .news-header::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -30px;
+    left: 0;
+    content: '';
+    background-color: #d97520;
   }
   .news-header-image {
     position: static;
@@ -374,10 +377,71 @@
   .news-list li {
     display: block;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
+  }
+  .news-article-box {
+    display: block;
+  }
+  .news-photo-area {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none outside;
+  }
+  .news-article-box img {
+    width: calc(90% - 60px);
+    height: 101px;
+    object-fit: cover;
+    clip-path: none;
+    margin: 0;
+  }
+  .news-photo-area::before {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 262px;
+    height: 81px;
+    z-index: -1;
+    content: '';
+    background-image: url(../../../../uploads/2020/12/news-item-back-sp.svg);
+  }
+  .news-manth {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'montserrat-bold';
+  }
+  .news-date {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 32px;
+    line-height: 32px;
+    font-family: 'montserrat-semibold';
+  }
+  .news-week {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'montserrat-bold';
+  }
+  .news-article-title {
+    color: #000000;
+    font-size: 18px;
+    padding-top: 30px;
+    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
   }
   .news-check-button {
     margin: 0 auto;
+  }
+  .news-category {
+    margin-top: 20px;
   }
   .news-check-button::after {
     display: none;
@@ -388,6 +452,7 @@
     margin-bottom: 150px;
     display: block;
     max-width: 400px;
+    position: relative;
   }
   .works-header {
     margin-bottom: 50px;
@@ -396,26 +461,84 @@
   .works-title {
     max-width: 400px;
     margin: 0 auto;
+    position: relative;
+  }
+  .works-title::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 100px;
+    left: 0;
+    content: '';
+    background-color: #d97520;
+  }
+  .works-title img {
+    width: 85%;
+  }
+  .works::after {
+    position: absolute;
+    width: 100vw;
+    height: 1000px;
+    top: 350px;
+    left: -20px;
+    content: '';
+    z-index: -1;
+    background-color: #0e376f;
+  }
+  .works::before {
+    position: absolute;
+    width: 50%;
+    height: 1200px;
+    top: 280px;
+    right: -20px;
+    z-index: -1;
+    content: '';
+    background-color: #d97520;
   }
   .works-title-photo {
     margin-top: 50px;
     margin-bottom: 50px;
+    position: relative;
+  }
+  .works-title-photo::after {
+    position: absolute;
+    width: 78px;
+    height: 52px;
+    background-size: contain;
+    bottom: -15px;
+    left: -10px;
+    content: '';
+    background-image: url(../../../../uploads/2020/12/hero-image-heart.svg);
+  }
+  .works-title-photo img {
+    position: relative;
+    right: -20px;
   }
   .works-caption {
     max-width: 380px;
     margin: 0 auto;
-    margin-left: 20px;
     margin-bottom: 30px;
   }
   .works-caption-abst {
     font-size: 18px;
     padding-bottom: 30px;
-    border-bottom: solid #000000;
+    color: #ffffff;
     max-width: 330px;
+    position: relative;
+  }
+  .works-caption-abst::after {
+    position: absolute;
+    width: 175px;
+    height: 1px;
+    content: '';
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
   }
   .works-caption-detail {
     font-size: 15px;
     max-width: 280px;
+    color: #ffffff;
     margin-top: 30px;
   }
   .works-content {
@@ -425,9 +548,14 @@
   }
   .works-content-title {
     font-size: 15px;
+    color: #ffffff;
   }
   .works-content-category {
     font-size: 14px;
+    color: #ffffff;
+  }
+  .works-content-category > .post-categories {
+    background-color: #d97520;
   }
   .works-article-box {
     width: 160px;
@@ -435,58 +563,32 @@
   .works-article-box img {
     width: 140px;
     height: 140px;
+    border: none;
   }
   .post-categories {
     height: 28px;
+    width: 85px;
   }
   .post-categories a {
     font-size: 14px;
+    width: 85px;
   }
   .works-list {
     left: 0;
-  }
-  .news-article-box {
-    display: block;
-  }
-  .news-photo-area {
-    display: flex;
-  }
-  .news-manth {
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    font-size: 16px;
-    line-height: 16px;
-    font-family: "montserrat-bold";
-  }
-  .news-date {
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    font-size: 32px;
-    line-height: 32px;
-    font-family: "montserrat-semibold";
-  }
-  .news-week {
-    margin: 0;
-    padding: 0;
-    color: #000000;
-    font-size: 16px;
-    line-height: 16px;
-    font-family: "montserrat-bold";
-  }
-  .news-article-title {
-    color: #000000;
-    font-size: 18px;
-    padding-top: 30px;
-    font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
   }
   .works-check-button {
     margin: 0 auto;
     margin-top: 30px;
   }
   .works-check-button::after {
-    display: none;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background-size: contain;
+    top: 100px;
+    left: -20px;
+    content: '';
+    background-image: url(../../../../uploads/2020/12/add-fig-sp-last.svg);
   }
   #top .secInner {
     padding: 0 20px;
@@ -581,7 +683,7 @@
   .table-primary td {
     font-size: 14px;
   }
-  form input[type="text"] {
+  form input[type='text'] {
     width: 100%;
   }
   /*--------------------------------------------
@@ -964,7 +1066,7 @@
   }
   .works_detail .lBox:after,
   .works_detail .rBox:after {
-    content: "";
+    content: '';
     border: 0px;
     border-top: solid 3px #fe7b07;
     border-right: solid 3px #fe7b07;
