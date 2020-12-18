@@ -26,7 +26,7 @@
     left: -12px;
     z-index: 3;
     background-color: #d97520;
-    content: '';
+    content: "";
   }
   .hero-image-photo-box::after {
     width: 146px;
@@ -65,7 +65,7 @@
     right: 0;
     z-index: 3;
     background-color: #d97520;
-    content: '';
+    content: "";
   }
   .top-news-box a {
     color: #ffffff;
@@ -97,7 +97,7 @@
     height: 126px;
     top: 50px;
     right: 20px;
-    content: '';
+    content: "";
     background-image: url(../../../../uploads/2020/12/news-bg-sp.svg);
   }
   .top-photo-area .top-date-box {
@@ -127,13 +127,13 @@
     width: 270px;
     height: 1px;
     background-color: #ffffff;
-    content: '';
+    content: "";
   }
   .top-news-year {
     font-size: 16px;
     line-height: 16px;
     color: #ffffff;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
     padding: 0;
     margin: 0;
     text-align: center;
@@ -142,7 +142,7 @@
     font-size: 32px;
     line-height: 32px;
     color: #ffffff;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
     padding: 0;
     margin: 0;
     text-align: center;
@@ -151,7 +151,7 @@
     font-size: 16px;
     line-height: 16px;
     color: #ffffff;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
     padding: 0;
     margin: 0;
     text-align: center;
@@ -178,7 +178,7 @@
     height: 20px;
     bottom: -55px;
     left: 0;
-    content: '';
+    content: "";
     background-color: #d97520;
   }
   .advantage-caption {
@@ -192,7 +192,7 @@
     height: 430px;
     top: 170px;
     left: -20px;
-    content: '';
+    content: "";
     z-index: -1;
     background-color: #0e376f;
   }
@@ -203,7 +203,7 @@
     top: 120px;
     right: -20px;
     z-index: -1;
-    content: '';
+    content: "";
     background-color: #d97520;
   }
   .advantage-caption::before {
@@ -215,7 +215,7 @@
     height: 20px;
     bottom: -147px;
     left: -40px;
-    content: '';
+    content: "";
     background-color: #d97520;
   }
   .advantage-caption-abst {
@@ -224,7 +224,7 @@
     color: #ffffff;
   }
   .advantage-caption-detail {
-    font-size: 15px;
+    font-size: 16px;
     max-width: 270px;
     margin-top: 20px;
     color: #ffffff;
@@ -253,7 +253,7 @@
     height: 20px;
     bottom: -30px;
     left: 0;
-    content: '';
+    content: "";
     background-color: #d97520;
   }
   .product-header::after {
@@ -263,7 +263,7 @@
     top: 210px;
     right: -20px;
     z-index: -3;
-    content: '';
+    content: "";
     background-color: #f5f5f5;
   }
   .product-image-left {
@@ -288,15 +288,15 @@
     object-fit: cover;
   }
   .product::before {
-    top: 430px;
-    width: 110vw;
+    top: 370px;
+    width: 100vw;
     z-index: -2;
-    height: 700px;
-    left: -30px;
+    height: 732px;
+    left: -5vw;
   }
   .product-content {
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 104px;
   }
   .product-content::before {
     width: 230px;
@@ -306,28 +306,27 @@
   .product::after {
     left: -30px;
     z-index: -3;
-    top: 400px;
+    top: 340px;
     width: 50%;
   }
   .product-content-header {
-    font-size: 18px;
-    margin-left: 20px;
+    font-size: 22px;
   }
   .product-content-body {
     margin: 0 auto;
-    max-width: 90%;
     margin-top: 30px;
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     list-style: none outside;
   }
   .product-content-box {
-    display: table-cell;
+    display: block;
     padding: 0;
     margin: 0;
-    float: left;
-    width: 50%;
-    padding-bottom: 20px;
+    width: 160px;
+    margin-bottom: 40px;
   }
   .product-contact-button {
     margin: 0 auto;
@@ -337,10 +336,10 @@
     display: none;
   }
   .product-item-title {
-    font-size: 16px;
+    font-size: 18px;
   }
   .product-item-detail li {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 25px;
   }
   .news {
@@ -458,7 +457,7 @@
     color: #000000;
     font-size: 16px;
     line-height: 16px;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
   }
   .news-date {
     margin: 0;
@@ -466,7 +465,7 @@
     color: #000000;
     font-size: 32px;
     line-height: 32px;
-    font-family: 'montserrat-semibold';
+    font-family: "montserrat-semibold";
   }
   .news-week {
     margin: 0;
@@ -474,7 +473,7 @@
     color: #000000;
     font-size: 16px;
     line-height: 16px;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
   }
   .news-article-title {
     color: #000000;
@@ -582,7 +581,7 @@
   .table-primary td {
     font-size: 14px;
   }
-  form input[type='text'] {
+  form input[type="text"] {
     width: 100%;
   }
   /*--------------------------------------------
@@ -965,7 +964,7 @@
   }
   .works_detail .lBox:after,
   .works_detail .rBox:after {
-    content: '';
+    content: "";
     border: 0px;
     border-top: solid 3px #fe7b07;
     border-right: solid 3px #fe7b07;
