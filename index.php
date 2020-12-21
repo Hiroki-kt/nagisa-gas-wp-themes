@@ -6,7 +6,7 @@
         <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_hero.svg" alt="ガスのちからで毎日の暮らしを安全・快適に " class="for_pc">
         <img src="<?php echo $upload_dir[
           'baseurl'
-        ]; ?>/2020/12/hero-image-title-sp.svg" alt="ガスのちからで毎日の暮らしを安全・快適に " class="for_sp">
+        ]; ?>/2020/12/heading_heroImage-sp.svg" alt="ガスのちからで毎日の暮らしを安全・快適に " class="for_sp">
         <div class="hero-image-en-caption for_pc">
             <p><font color="#d97520">We</font> are a company that invents places <br> that continue to make business to <br> become a new culture before long.</p>
         </div>
@@ -88,7 +88,7 @@
           'baseurl'
         ]; ?>/2020/12/heading_advantage.svg" alt="ナギサガスフィッティングスの安心施工" class="for_pc">
         <div class="advantage-title-sp for_sp">
-            <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/advantage-title-sp.svg" alt="ナギサガスフィッティングスの安心施工">
+            <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_advantage-sp.svg" alt="ナギサガスフィッティングスの安心施工">
         </div>
         <div class="advantage-caption">
             <p class="advantage-caption-abst">他社で断られた作業でも一度ご相談下さい！ご希望であれば、女性スタッフ同行でお伺いいたします</p>
@@ -125,7 +125,7 @@
         </div>
         <img src="<?php echo $upload_dir[
           'baseurl'
-        ]; ?>/2020/12/product-title-sp.svg" alt="私達はガス機器から水回りまで幅広く手掛けけています" class="for_sp">
+        ]; ?>/2020/12/heading_product-sp.svg" alt="私達はガス機器から水回りまで幅広く手掛けけています" class="for_sp">
     </div>
     <div class="product-content">
         <div class="product-content-header">
@@ -134,9 +134,9 @@
         <div class="product-content-body">
             <div class="heater product-content-box">
                 <p class="product-item-title">-給湯器-</p>
-                <img src="<?php echo $upload_dir[
-                  'baseurl'
-                ]; ?>/2020/12/product-heater.png.webp" alt="給湯器">
+                <a href="<?php echo home_url(); ?>/product/gas/">
+                    <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/product-heater.png.webp" alt="給湯器">
+                </a>
                 <ul class="product-item-detail">
                     <li>・すぐにお湯がでない</li>
                     <li>・自由な温度にしたい</li>
@@ -144,9 +144,9 @@
             </div>
             <div class="bath product-content-box">
                 <p class="product-item-title">-浴室暖房乾燥機-</p>
-                <img src="<?php echo $upload_dir[
-                  'baseurl'
-                ]; ?>/2020/12/product-bath.png.webp" alt="浴室暖房乾燥機">
+                <a href="<?php echo home_url(); ?>/product/bath/">
+                    <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/product-bath.png.webp" alt="浴室暖房乾燥機">
+                </a>
                 <ul class="product-item-detail">
                     <li>・冬場のお風呂が寒い</li>
                     <li>・洗濯物の乾きが悪い</li>
@@ -154,9 +154,9 @@
             </div>
             <div class="kitchen product-content-box">
                 <p class="product-item-title">-キッチン機器-</p>
-                <img src="<?php echo $upload_dir[
-                  'baseurl'
-                ]; ?>/2020/12/product-kitchen.png.webp" alt="キッチン機器">
+                <a href="<?php echo home_url(); ?>/product/kitchen/">
+                    <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/product-kitchen.png.webp" alt="キッチン機器">
+                </a>
                 <ul class="product-item-detail">
                     <li>・時短調理をしたい</li>
                     <li>・食器洗いが面倒だ</li>
@@ -164,9 +164,9 @@
             </div>
             <div class="toilet product-content-box">
                 <p class="product-item-title">-トイレタリー-</p>
-                <img src="<?php echo $upload_dir[
-                  'baseurl'
-                ]; ?>/2020/12/product-toilet.png.webp" alt="トイレタリー">
+                <a href="<?php echo home_url(); ?>/product/toilet/">
+                    <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/product-toilet.png.webp" alt="トイレタリー">
+                </a>
                 <ul class="product-item-detail">
                     <li>・温水洗浄を使いたい</li>
                     <li>・冬場の便座が寒い</li>
@@ -191,7 +191,7 @@
         ]; ?>/2020/12/news-title-image.png.webp" alt="ナギサガス" class="news-header-image for_sp">
         <img src="<?php echo $upload_dir[
           'baseurl'
-        ]; ?>/2020/12/news-title-sp.svg" alt="私達の最近の歩みを紹介します" class="news-header-title for_sp">
+        ]; ?>/2020/12/heading_news-sp.svg" alt="私達の最近の歩みを紹介します" class="news-header-title for_sp">
     </div>
     <div class="news-content">
         <?php $args = [
@@ -246,7 +246,7 @@
     </div>
     <div class="works-title">
         <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works.svg" alt="私達の施工実績の一部をご紹介します" class="for_pc">
-        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-title-sp.svg" alt="私達の施工実績の一部をご紹介します" class="for_sp">
+        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works-sp.svg" alt="私達の施工実績の一部をご紹介します" class="for_sp">
         <div class="works-title-photo">
             <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-title-image-sp.png.webp" alt="私達の施工実績の一部をご紹介します" class="for_sp">
         </div>
