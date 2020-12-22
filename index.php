@@ -35,10 +35,12 @@
                 endwhile; ?>
                 <li>
                     <div class="top-news-box">
-                        <img class="clip circle" src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
+                        <a href="<?php the_permalink(); ?>">
+                            <img class="clip circle" src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
+                        </a>
                         <div class="top-news-text">
-                            <div class="top-date"><?php echo get_post_time('Y m d /【D】'); ?></div>
                             <a href="<?php the_permalink(); ?>">
+                                <div class="top-date"><?php echo get_post_time('Y m d /【D】'); ?></div>
                                 <div class="top-title"><?php the_title(); ?></div>
                             </a>
                         </div>
@@ -60,8 +62,7 @@
         ]; ?>
         <?php $loop = new WP_Query($args); ?>
         <ul class="top-news-list">
-            <?php while ($loop->have_posts()):
-            $loop->the_post(); ?>
+            <?php while ($loop->have_posts()):$loop->the_post(); ?>
             <li>
                 <div class="top-news-box">
                     <div class="top-photo-area">
@@ -208,28 +209,36 @@
                 $cat = get_the_category();
                 $cat = $cat[0];?>
             <li>
-                <a href="<?php the_permalink(); ?>">
-                    <div class="news-article-box for_pc">
+                <div class="news-article-box for_pc">
+                    <a href="<?php the_permalink(); ?>">
                         <img src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
-                        <div class="news-article-text">
+                    </a>
+                    <div class="news-article-text">
+                        <a href="<?php the_permalink(); ?>">
                             <div class="news-date"><?php the_time('Y m/d（D）'); ?></div>
                             <div class="news-title"><?php the_title(); ?></div>
-                            <div class="news-category <?php echo $cat->category_nicename; ?>"><?php the_category(); ?></div>
-                        </div>
+                        </a>
+                        <div class="news-category <?php echo $cat->category_nicename; ?>"><?php the_category(); ?></div>
                     </div>
-                    <div class="news-article-box for_sp">
-                        <div class="news-photo-area">
-                            <div class="news-date-box">
+                </div>
+                <div class="news-article-box for_sp">
+                    <div class="news-photo-area">
+                        <div class="news-date-box">
+                            <a href="<?php the_permalink(); ?>">
                                 <div class="news-manth"><?php the_time('Y.m'); ?></div>
                                 <div class="news-date"><?php the_time('d'); ?></div>
                                 <div class="news-week"><?php echo get_post_time('D'); ?></div>
-                            </div>
-                            <img src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
+                            </a>
                         </div>
-                        <div class="news-article-title"><?php the_title(); ?></div>
-                        <div class="news-category"><?php the_category(); ?></div>
+                        <a href="<?php the_permalink(); ?>">
+                            <img src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
+                        </a>
                     </div>
-                </a>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="news-article-title"><?php the_title(); ?></div>
+                    </a>
+                    <div class="news-category"><?php the_category(); ?></div>
+                </div>
             </li>
             <?php
             endwhile; ?>
@@ -270,13 +279,13 @@
             <?php while ($loop->have_posts()):
               $loop->the_post(); ?>
             <li>
-                <a href="<?php the_permalink(); ?>">
-                    <div class="works-article-box">
+                <div class="works-article-box">
+                    <a href="<?php the_permalink(); ?>">
                         <img src="<?php echo catch_first_image(); ?>" alt="施工実績" />
                         <div class="works-content-title"><?php the_title(); ?></div>
-                        <div class="works-content-category"><?php the_category(); ?></div>
-                    </div>
-                </a>
+                    </a>
+                    <div class="works-content-category"><?php the_category(); ?></div>
+                </div>
             </li>
             <?php
             endwhile; ?>
