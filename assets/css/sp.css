@@ -382,7 +382,6 @@
   .news-list li {
     display: block;
     width: 100%;
-    margin-bottom: 100px;
   }
   .news-article-box {
     display: block;
@@ -450,6 +449,9 @@
   }
   .news-check-button::after {
     display: none;
+  }
+  .news-item {
+    margin-bottom: 100px;
   }
   .works {
     margin: 0 auto;
@@ -579,6 +581,7 @@
     width: 85px;
   }
   .post-categories a {
+    line-height: 26px;
     font-size: 14px;
     width: 85px;
   }

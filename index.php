@@ -207,7 +207,7 @@
             <?php
                 $cat = get_the_category();
                 $cat = $cat[0];?>
-            <li>
+            <li class="news-item">
                 <a href="<?php the_permalink(); ?>">
                     <div class="news-article-box for_pc">
                         <img src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
