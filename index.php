@@ -87,7 +87,7 @@
     <div class="advantage-title">
         <img src="<?php echo $upload_dir[
           'baseurl'
-        ]; ?>/2020/12/heading_advantage.svg" alt="ナギサガスフィッティングスの安心施工" class="for_pc">
+        ]; ?>/2020/12/heading_advantage.svg" alt="ナギサガスフィッティングスの安心施工" class="for_pc section-title">
         <div class="advantage-title-sp for_sp">
             <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_advantage-sp.svg" alt="ナギサガスフィッティングスの安心施工">
         </div>
@@ -115,7 +115,7 @@
     <div class="product-header">
         <img src="<?php echo $upload_dir[
           'baseurl'
-        ]; ?>/2020/12/heading_product.svg" alt="私達はガス機器から水回りまで幅広く手掛けけています" class="for_pc">
+        ]; ?>/2020/12/heading_product.svg" alt="私達はガス機器から水回りまで幅広く手掛けけています" class="for_pc section-title">
         <div class="product-header-image">
             <img src="<?php echo $upload_dir[
               'baseurl'
@@ -183,7 +183,7 @@
     <div class="news-header">
         <img src="<?php echo $upload_dir[
           'baseurl'
-        ]; ?>/2020/12/heading_news.svg" alt="私達の最近の歩みを紹介します" class="for_pc">
+        ]; ?>/2020/12/heading_news.svg" alt="私達の最近の歩みを紹介します" class="for_pc section-title">
         <img src="<?php echo $upload_dir[
           'baseurl'
         ]; ?>/2020/12/news-title-image.svg" alt="ナギサガス" class="news-header-image for_pc">
@@ -208,10 +208,10 @@
             <?php
                 $cat = get_the_category();
                 $cat = $cat[0];?>
-            <li>
+            <li class="news-item">
                 <div class="news-article-box for_pc">
                     <a href="<?php the_permalink(); ?>">
-                        <img src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
+                        <img src="<?php echo catch_first_image(); ?>" class="news-article-box-inner" alt="お知らせ"/>
                     </a>
                     <div class="news-article-text">
                         <a href="<?php the_permalink(); ?>">
@@ -254,13 +254,13 @@
         <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-header-image2.png.webp" alt="累計8000件">
     </div>
     <div class="works-title">
-        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works.svg" alt="私達の施工実績の一部をご紹介します" class="for_pc">
+        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works.svg" alt="私達の施工実績の一部をご紹介します" class="for_pc section-title">
         <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works-sp.svg" alt="私達の施工実績の一部をご紹介します" class="for_sp">
         <div class="works-title-photo">
             <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-title-image-sp.png.webp" alt="私達の施工実績の一部をご紹介します" class="for_sp">
         </div>
         <div class="works-caption">
-            <p class="works-caption-abst"><font color="#d97520">ナギサガス</font>には、年間で600件、累計で8000件という豊富な施工実績があり、経験に裏打ちされたノウハウを保証します</p>
+            <p class="works-caption-abst">ナギサガスには、年間で600件、累計で8000件という豊富な施工実績があり、経験に裏打ちされたノウハウを保証します</p>
             <p class="works-caption-detail">ナギサガスは創業時から、次により良い仕事ができるよう、施工実績を記録し続けてきました。記録された施工実績は、社員間での学習のために使用しており、豊富なノウハウが社内に蓄積されています。</p>
         </div>
         <a href="<?php echo home_url(); ?>/works/" class="contact-button works-check-button for_pc">

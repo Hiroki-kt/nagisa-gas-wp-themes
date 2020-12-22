@@ -4,6 +4,9 @@
   /*--------------------------------------------
 	 TOP
 --------------------------------------------*/
+  #wrapper {
+    overflow-x: hidden;
+  }
   .hero-image {
     display: block;
     max-width: 400px;
@@ -26,7 +29,7 @@
     left: -12px;
     z-index: 3;
     background-color: #d97520;
-    content: '';
+    content: "";
   }
   .hero-image-photo-box::after {
     width: 146px;
@@ -46,7 +49,7 @@
     left: 0;
     background-color: #0e376f;
     margin-top: 50px;
-    width: 350px;
+    width: 100%;
     height: 280px;
   }
   .top-news-box {
@@ -65,15 +68,15 @@
     right: 0;
     z-index: 3;
     background-color: #d97520;
-    content: '';
+    content: "";
   }
   .top-news-box a {
     color: #ffffff;
     position: absolute;
     right: 30px;
-    bottom: -40px;
+    bottom: -48px;
     font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
-    font-size: 13px;
+    font-size: 16px;
   }
   .top-news-box a i {
     padding-right: 10px;
@@ -97,7 +100,7 @@
     height: 126px;
     top: 50px;
     right: 20px;
-    content: '';
+    content: "";
     background-image: url(../../../../uploads/2020/12/news-bg-sp.svg);
   }
   .top-photo-area .top-date-box {
@@ -113,11 +116,11 @@
   }
   .top-title {
     position: relative;
-    padding: 0 32px 0 20px;
+    padding: 0 32px 16px 20px;
     /* border-bottom: solid 1px #ffffff; */
-    font-size: 16px;
+    font-size: 18px;
     color: #ffffff;
-    height: 50px;
+    height: fit-content;
     width: 300px;
   }
   .top-title::after {
@@ -127,13 +130,13 @@
     width: 270px;
     height: 1px;
     background-color: #ffffff;
-    content: '';
+    content: "";
   }
   .top-news-year {
     font-size: 16px;
     line-height: 16px;
     color: #ffffff;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
     padding: 0;
     margin: 0;
     text-align: center;
@@ -142,7 +145,7 @@
     font-size: 32px;
     line-height: 32px;
     color: #ffffff;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
     padding: 0;
     margin: 0;
     text-align: center;
@@ -151,7 +154,7 @@
     font-size: 16px;
     line-height: 16px;
     color: #ffffff;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
     padding: 0;
     margin: 0;
     text-align: center;
@@ -191,19 +194,19 @@
     width: 100vw;
     height: 430px;
     top: 170px;
-    left: -20px;
-    content: '';
+    left: -5vw;
+    content: "";
     z-index: -1;
     background-color: #0e376f;
   }
   .advantage::before {
     position: absolute;
     width: 50%;
-    height: 610px;
+    height: calc(100% - 72px);
     top: 120px;
-    right: -20px;
+    right: -5vw;
     z-index: -1;
-    content: '';
+    content: "";
     background-color: #d97520;
   }
   .advantage-caption::before {
@@ -215,11 +218,11 @@
     height: 20px;
     bottom: -145px;
     left: -40px;
-    content: '';
+    content: "";
     background-color: #d97520;
   }
   .advantage-caption-abst {
-    font-size: 18px;
+    font-size: 21px;
     max-width: 350px;
     color: #ffffff;
   }
@@ -239,7 +242,7 @@
   .product {
     display: block;
     margin: 0 auto;
-    max-width: 400px;
+    width: 90vw;
     margin-top: 80px;
   }
   .product-header {
@@ -263,7 +266,7 @@
     top: 210px;
     right: -20px;
     z-index: -3;
-    content: '';
+    content: "";
     background-color: #f5f5f5;
   }
   .product-image-left {
@@ -277,11 +280,16 @@
     width: 100%;
   }
   .product-header-image {
+    width: 100vw;
+    overflow: hidden;
     display: flex;
     position: static;
     margin: 0;
-    margin-left: -50px;
+    margin-left: -5vw;
     height: 130px;
+    top: auto;
+    left: auto;
+    transform: none;
   }
   .product-header-image img {
     margin: 0;
@@ -304,7 +312,7 @@
     background-size: contain;
   }
   .product::after {
-    left: -30px;
+    left: -5vw;
     z-index: -3;
     top: 340px;
     width: 50%;
@@ -365,7 +373,7 @@
     width: 100%;
   }
   .news-header-title {
-    width: 90%;
+    width: 75%;
   }
   .news-list {
     display: block;
@@ -377,7 +385,11 @@
   .news-list li {
     display: block;
     width: 100%;
-    margin-bottom: 100px;
+    height: fit-content;
+    margin-bottom: 48px;
+  }
+  .news-content {
+    margin-top: 64px;
   }
   .news-article-box {
     display: block;
@@ -404,16 +416,16 @@
     width: 262px;
     height: 81px;
     z-index: -1;
-    content: '';
+    content: "";
     background-image: url(../../../../uploads/2020/12/news-item-back-sp.svg);
   }
-  .news-manth {
+  .news-month {
     margin: 0;
     padding: 0;
     color: #000000;
     font-size: 16px;
     line-height: 16px;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
   }
   .news-date {
     margin: 0;
@@ -421,7 +433,7 @@
     color: #000000;
     font-size: 32px;
     line-height: 32px;
-    font-family: 'montserrat-semibold';
+    font-family: "montserrat-semibold";
   }
   .news-week {
     margin: 0;
@@ -429,11 +441,11 @@
     color: #000000;
     font-size: 16px;
     line-height: 16px;
-    font-family: 'montserrat-bold';
+    font-family: "montserrat-bold";
   }
   .news-article-title {
     color: #000000;
-    font-size: 18px;
+    font-size: 20px;
     padding-top: 30px;
     font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
   }
@@ -446,19 +458,25 @@
   .news-check-button::after {
     display: none;
   }
+  .news-item {
+    margin-bottom: 100px;
+  }
   .works {
     margin: 0 auto;
     margin-top: 90px;
-    margin-bottom: 150px;
+    margin-bottom: 130px;
     display: block;
-    max-width: 400px;
+    width: 90vw;
     position: relative;
   }
   .works-header {
+    width: 95vw;
+    overflow: hidden;
     margin-bottom: 50px;
     display: flex;
   }
   .works-title {
+    width: 100%;
     max-width: 400px;
     margin: 0 auto;
     position: relative;
@@ -478,21 +496,21 @@
   .works::after {
     position: absolute;
     width: 100vw;
-    height: 1000px;
+    height: calc(100% - 450px);
     top: 350px;
-    left: -20px;
-    content: '';
+    left: -5vw;
+    content: "";
     z-index: -1;
     background-color: #0e376f;
   }
   .works::before {
     position: absolute;
     width: 50%;
-    height: 1200px;
+    height: calc(100% - 240px);
     top: 280px;
-    right: -20px;
+    right: -5vw;
     z-index: -1;
-    content: '';
+    content: "";
     background-color: #d97520;
   }
   .works-title-photo {
@@ -507,7 +525,7 @@
     background-size: contain;
     bottom: -15px;
     left: -10px;
-    content: '';
+    content: "";
     background-image: url(../../../../uploads/2020/12/hero-image-heart.svg);
   }
   .works-title-photo img {
@@ -523,7 +541,7 @@
     display: none;
   }
   .works-caption-abst {
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 30px;
     color: #ffffff;
     max-width: 330px;
@@ -533,39 +551,43 @@
     position: absolute;
     width: 175px;
     height: 1px;
-    content: '';
+    content: "";
     left: 0;
     bottom: 0;
     background-color: #ffffff;
   }
   .works-caption-detail {
-    font-size: 15px;
-    max-width: 280px;
+    font-size: 16px;
+    max-width: 100%;
     color: #ffffff;
     margin-top: 30px;
   }
   .works-content {
     max-width: 380px;
-    margin: 0 auto;
+    margin: 40px auto 0;
     width: auto;
   }
   .works-content-title {
-    font-size: 15px;
+    font-size: 18px;
     color: #ffffff;
   }
   .works-content-category {
     font-size: 14px;
     color: #ffffff;
+    padding-top: 12px;
   }
   .works-content-category > .post-categories {
-    background-color: #d97520;
+    background-color: #fff;
+  }
+  .works-content-category > .post-categories a {
+    color: #0e376f;
   }
   .works-article-box {
-    width: 160px;
+    width: 40vw;
   }
   .works-article-box img {
-    width: 140px;
-    height: 140px;
+    width: 40vw;
+    height: 40vw;
     border: none;
   }
   .post-categories {
@@ -573,15 +595,20 @@
     width: 85px;
   }
   .post-categories a {
+    line-height: 26px;
     font-size: 14px;
     width: 85px;
   }
   .works-list {
     left: 0;
   }
+  .works-list li {
+    width: 40vw;
+    margin-bottom: 40px;
+  }
   .works-check-button {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 48px;
   }
   .works-check-button::after {
     position: absolute;
@@ -590,7 +617,7 @@
     background-size: contain;
     top: 100px;
     left: -20px;
-    content: '';
+    content: "";
     background-image: url(../../../../uploads/2020/12/add-fig-sp-last.svg);
   }
   #top .secInner {
@@ -686,7 +713,7 @@
   .table-primary td {
     font-size: 14px;
   }
-  form input[type='text'] {
+  form input[type="text"] {
     width: 100%;
   }
   /*--------------------------------------------
@@ -1069,7 +1096,7 @@
   }
   .works_detail .lBox:after,
   .works_detail .rBox:after {
-    content: '';
+    content: "";
     border: 0px;
     border-top: solid 3px #fe7b07;
     border-right: solid 3px #fe7b07;
