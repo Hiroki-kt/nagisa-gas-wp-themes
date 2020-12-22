@@ -210,7 +210,7 @@
             <li class="news-item">
                 <a href="<?php the_permalink(); ?>">
                     <div class="news-article-box for_pc">
-                        <img src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
+                        <img src="<?php echo catch_first_image(); ?>" class="news-article-box-inner" alt="お知らせ"/>
                         <div class="news-article-text">
                             <div class="news-date"><?php the_time('Y m/d（D）'); ?></div>
                             <div class="news-title"><?php the_title(); ?></div>
@@ -220,7 +220,7 @@
                     <div class="news-article-box for_sp">
                         <div class="news-photo-area">
                             <div class="news-date-box">
-                                <div class="news-manth"><?php the_time('Y.m'); ?></div>
+                                <div class="news-month"><?php the_time('Y.m'); ?></div>
                                 <div class="news-date"><?php the_time('d'); ?></div>
                                 <div class="news-week"><?php echo get_post_time('D'); ?></div>
                             </div>
