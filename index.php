@@ -251,7 +251,7 @@
             <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-title-image-sp.png.webp" alt="私達の施工実績の一部をご紹介します" class="for_sp">
         </div>
         <div class="works-caption">
-            <p class="works-caption-abst"><font color="#d97520">ナギサガス</font>には、年間で600件、累計で8000件という豊富な施工実績があり、経験に裏打ちされたノウハウを保証します</p>
+            <p class="works-caption-abst">ナギサガスには、年間で600件、累計で8000件という豊富な施工実績があり、経験に裏打ちされたノウハウを保証します</p>
             <p class="works-caption-detail">ナギサガスは創業時から、次により良い仕事ができるよう、施工実績を記録し続けてきました。記録された施工実績は、社員間での学習のために使用しており、豊富なノウハウが社内に蓄積されています。</p>
         </div>
         <a href="<?php echo home_url(); ?>/works/" class="contact-button works-check-button for_pc">

@@ -50,7 +50,7 @@
         </nav>
         <!--sp-footer-nav-->
         <div class="for_sp">
-            <div class="btn_01"> <a href="<?php echo home_url(); ?>/inquiry/"><i class="far fa-envelope"></i>お問い合わせ</a> </div>
+            <div class="btn_01"> <a href="<?php echo home_url(); ?>/inquiry/"><i class="far fa-envelope"></i>お問い合わせはこちら</a> </div>
 
             <nav id="ftrNav" class="for_sp">
                 <ul>

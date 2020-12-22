@@ -196,6 +196,7 @@ a {
   text-align: center;
 }
 .btn_01 a {
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
   display: flex;
   display: -webkit-flex;
   background: #39302c;
@@ -727,7 +728,14 @@ a {
   }
   .btn_01 a {
     /* max-width: 235px; */
-    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 16px 10px;
+    width: 80%;
+  }
+  .btn_01 a i {
+    font-size: 32px;
+    margin-right: 0.6em;
   }
   .solidBox {
     padding: 20px;
