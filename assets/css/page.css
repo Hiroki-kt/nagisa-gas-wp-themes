@@ -57,6 +57,7 @@
 .hero-image-contact-button {
   margin: 0 auto;
   margin-top: 80px;
+  box-sizing: border-box;
 }
 .top-news {
   position: absolute;
@@ -171,6 +172,7 @@
   position: relative;
   margin-top: 50px;
   margin-left: 60px;
+  border: 3px solid #000;
 }
 .advantage-contact-button::after {
   position: absolute;
@@ -289,6 +291,9 @@
 .news-header-image {
   position: absolute;
   right: 0;
+}
+.news-header-image.for_pc {
+  width: 50vw;
 }
 .news-content {
   margin-top: 80px;
@@ -630,6 +635,17 @@
 }
 .section-title.for_pc {
   height: 200px;
+}
+.contact-button {
+  border: 3px solid #000;
+}
+.contact-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 3px solid #000;
+}
+.contact-button:hover p {
+  color: #000;
 }
 @media screen and (max-width: 1199px) {
   .under #mainimage {
