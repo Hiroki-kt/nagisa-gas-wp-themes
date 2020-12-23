@@ -281,7 +281,9 @@
             <li>
                 <div class="works-article-box">
                     <a href="<?php the_permalink(); ?>">
+                    <div class="works-article-image-wrapper">
                         <img src="<?php echo catch_first_image(); ?>" alt="施工実績" />
+                    </div>
                         <div class="works-content-title"><?php the_title(); ?></div>
                     </a>
                     <div class="works-content-category"><?php the_category(); ?></div>

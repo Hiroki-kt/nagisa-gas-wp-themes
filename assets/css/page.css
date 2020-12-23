@@ -489,12 +489,22 @@
 .works-article-box {
   width: 200px;
 }
+.works-article-image-wrapper {
+  width: 200px;
+  height: 200px;
+  border: 4px solid #d95920;
+  overflow: hidden;
+}
 .works-article-box img {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border: 4px solid #d95920;
+  transition: transform 0.5s ease-out;
 }
+.works-article-box img:hover {
+  transform: scale(1.2);
+}
+
 .works-content-title {
   font-size: 24px;
   padding-top: 20px;
