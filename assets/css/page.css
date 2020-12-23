@@ -641,11 +641,10 @@
 }
 .contact-button:hover {
   background-color: #fff;
-  color: #000;
-  border: 3px solid #000;
+  border: 3px solid #0e376f;
 }
 .contact-button:hover p {
-  color: #000;
+  color: #0e376f;
 }
 @media screen and (max-width: 1199px) {
   .under #mainimage {
