@@ -210,7 +210,7 @@
                 $cat = $cat[0];?>
             <li class="news-item">
                 <div class="news-article-box for_pc">
-                    <a href="<?php the_permalink(); ?>">
+                    <a href="<?php the_permalink(); ?>" class="news-article-box-wrapper">
                         <img src="<?php echo catch_first_image(); ?>" class="news-article-box-inner" alt="お知らせ"/>
                     </a>
                     <div class="news-article-text">
