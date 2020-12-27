@@ -225,7 +225,7 @@
                     <div class="news-photo-area">
                         <div class="news-date-box">
                             <a href="<?php the_permalink(); ?>">
-                                <div class="news-manth"><?php the_time('Y.m'); ?></div>
+                                <div class="news-month"><?php the_time('Y.m'); ?></div>
                                 <div class="news-date"><?php the_time('d'); ?></div>
                                 <div class="news-week"><?php echo get_post_time('D'); ?></div>
                             </a>
