@@ -10,6 +10,9 @@
         <div class="hero-image-en-caption for_pc">
             <p><font color="#d97520">We</font> are a company that invents places <br> that continue to make business to <br> become a new culture before long.</p>
         </div>
+        <div class="hero-image-en-caption for_tablet">
+            <p><font color="#d97520">We</font> are a company that invents places <br> that continue to make business to <br> become a new culture before long.</p>
+        </div>
         <a href="<?php echo home_url(); ?>/inquiry/" class="contact-button hero-image-contact-button for_pc">
             <p>無料見積もりはこちら<i class="fas fa-play "></i></p>
         </a>
@@ -74,7 +77,8 @@
                             <div class="top-news-week"><?php echo get_post_time('D'); ?></div>
                         </div>
                     </div>
-                    <div class="top-title"><?php the_title(); ?></div>
+                    <div class="top-title">
+                        <?php the_title(); ?></div>
                     <a href="<?php the_permalink(); ?>"><i class="far fa-play-circle"></i>記事を読む</a>
                 </div>
             </li>

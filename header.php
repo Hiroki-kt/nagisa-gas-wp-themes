@@ -400,9 +400,11 @@
 						<img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/Nagisagas_logo.svg" alt="ナギサガスフィッティングス">
 					</a>
 				</div>
-				<button type="button" class="drawer-toggle drawer-hamburger">
+				<button type="button" class="drawer-hamburger-wrapper">
+				<div class="drawer-toggle drawer-hamburger">
 					<span class="drawer-hamburger-icon">
 					</span>
+			    </div>
 				</button>
 				<nav class="drawer-nav">
 					<div class="drawer-menu">
