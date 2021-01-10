@@ -87,6 +87,34 @@
         </ul>
     </div>
 </div>
+<div class="category">
+    <div class="category_wrapper">
+        <div class="category_item">
+            <h1 class="category_main-heading">商品の購入+</br>取り付けを</h1>
+            <h2 class="category_sub-heading">ご希望のお客様</h2>
+            <button class="category_button">
+                <div class="category_button-inner">サービス紹介ページへ</div>
+                <div class="category_button-inner">▶︎</div>
+            </button>
+        </div>
+        <div class="category_item">
+            <h1 class="category_main-heading">取り付け工事</br>のみを</h1>
+            <h2 class="category_sub-heading">ご希望のお客様</h2>
+            <button class="category_button">
+                <div class="category_button-inner">サービス紹介ページへ</div>
+                <div class="category_button-inner">▶︎</div>
+            </button>
+        </div>
+        <div class="category_item">
+            <h1 class="category_main-heading">商品の選定+</br>購入+取り付けを</h1>
+            <h2 class="category_sub-heading">ご希望のお客様</h2>
+            <button class="category_button">
+                <div class="category_button-inner">サービス紹介ページへ</div>
+                <div class="category_button-inner">▶︎</div>
+            </button>
+        </div>
+    </div>
+</div>
 <div class="advantage">
     <div class="advantage-title">
         <img src="<?php echo $upload_dir[
