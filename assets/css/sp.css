@@ -164,6 +164,7 @@
   .category_wrapper {
     flex-direction: column;
     height: auto;
+    width: 100%;
   }
   .category_item {
     justify-content: flex-start;
@@ -1490,6 +1491,12 @@
     width: fit-content;
     max-width: 35vw;
     padding-bottom: 24px;
+  }
+  .category {
+    width: 90vw;
+  }
+  .category_item {
+    width: 100%;
   }
   .advantage {
     max-width: none;
