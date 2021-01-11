@@ -272,9 +272,11 @@
                                 <div class="news-week"><?php echo get_post_time('D'); ?></div>
                             </a>
                         </div>
-                        <a href="<?php the_permalink(); ?>">
-                            <img src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
-                        </a>
+                        <div class="news-article-box-outer">
+                            <a href="<?php the_permalink(); ?>" class="news-article-box-wrapper js-trigger">
+                                <img src="<?php echo catch_first_image(); ?>" class="news-article-box-inner" alt="お知らせ"/>
+                            </a>
+                        </div> 
                     </div>
                     <a href="<?php the_permalink(); ?>">
                         <div class="news-article-title"><?php the_title(); ?></div>
