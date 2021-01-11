@@ -38,7 +38,7 @@
                 endwhile; ?>
                 <li>
                     <div class="top-news-box">
-                        <a href="<?php the_permalink(); ?>">
+                        <a href="<?php the_permalink(); ?>" class="top-news-image-wrapper">
                             <img class="clip circle" src="<?php echo catch_first_image(); ?>" alt="お知らせ"/>
                         </a>
                         <div class="top-news-text">
@@ -92,7 +92,7 @@
         <div class="category_item">
             <h1 class="category_main-heading">商品の購入+</br>取り付けを</h1>
             <h2 class="category_sub-heading">ご希望のお客様</h2>
-            <button class="category_button">
+            <button class="category_button js-trigger">
                 <div class="category_button-inner">サービス紹介ページへ</div>
                 <div class="category_button-inner">▶︎</div>
             </button>
@@ -100,7 +100,7 @@
         <div class="category_item">
             <h1 class="category_main-heading">取り付け工事</br>のみを</h1>
             <h2 class="category_sub-heading">ご希望のお客様</h2>
-            <button class="category_button">
+            <button class="category_button js-trigger">
                 <div class="category_button-inner">サービス紹介ページへ</div>
                 <div class="category_button-inner">▶︎</div>
             </button>
@@ -108,7 +108,7 @@
         <div class="category_item">
             <h1 class="category_main-heading">商品の選定+</br>購入+取り付けを</h1>
             <h2 class="category_sub-heading">ご希望のお客様</h2>
-            <button class="category_button">
+            <button class="category_button js-trigger">
                 <div class="category_button-inner">サービス紹介ページへ</div>
                 <div class="category_button-inner">▶︎</div>
             </button>
@@ -149,12 +149,20 @@
           'baseurl'
         ]; ?>/2020/12/heading_product.svg" alt="私達はガス機器から水回りまで幅広く手掛けけています" class="for_pc section-title">
         <div class="product-header-image">
-            <img src="<?php echo $upload_dir[
-              'baseurl'
-            ]; ?>/2020/12/product-image1.png.webp" alt="ナギサガス" class="product-image-left">
-            <img src="<?php echo $upload_dir[
-              'baseurl'
-            ]; ?>/2020/12/product-image2.png.webp" alt="ナギサガス" class="product-image-right">
+            <div class="product-image-left-outer">
+                <div class="product-image-left-wrapper js-trigger">
+                    <img src="<?php echo $upload_dir[
+                    'baseurl'
+                    ]; ?>/2020/12/product-image1.png.webp" alt="ナギサガス" class="product-image-left">
+                </div>
+            </div>
+            <div class="product-image-right-outer">
+                <div class="product-image-right-wrapper js-trigger">
+                    <img src="<?php echo $upload_dir[
+                    'baseurl'
+                    ]; ?>/2020/12/product-image2.png.webp" alt="ナギサガス" class="product-image-right">
+                </div>
+            </div>
         </div>
         <img src="<?php echo $upload_dir[
           'baseurl'
@@ -242,9 +250,11 @@
                 $cat = $cat[0];?>
             <li class="news-item">
                 <div class="news-article-box for_pc">
-                    <a href="<?php the_permalink(); ?>" class="news-article-box-wrapper">
-                        <img src="<?php echo catch_first_image(); ?>" class="news-article-box-inner" alt="お知らせ"/>
-                    </a>
+                    <div class="news-article-box-outer">
+                        <a href="<?php the_permalink(); ?>" class="news-article-box-wrapper js-trigger">
+                            <img src="<?php echo catch_first_image(); ?>" class="news-article-box-inner" alt="お知らせ"/>
+                        </a>
+                    </div>
                     <div class="news-article-text">
                         <a href="<?php the_permalink(); ?>">
                             <div class="news-date"><?php the_time('Y m/d（D）'); ?></div>
@@ -313,8 +323,10 @@
             <li>
                 <div class="works-article-box">
                     <a href="<?php the_permalink(); ?>">
-                    <div class="works-article-image-wrapper">
-                        <img src="<?php echo catch_first_image(); ?>" alt="施工実績" />
+                    <div class="works-article-image-outer">
+                        <div class="works-article-image-wrapper js-trigger">
+                            <img src="<?php echo catch_first_image(); ?>" alt="施工実績" />
+                        </div>
                     </div>
                         <div class="works-content-title"><?php the_title(); ?></div>
                     </a>
