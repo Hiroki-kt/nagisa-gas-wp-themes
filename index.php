@@ -292,8 +292,16 @@
 </div>
 <div class="works">
     <div class="works-header for_sp">
-        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-header-image1.png.webp" alt="年間で600件">
-        <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-header-image2.png.webp" alt="累計8000件">
+        <div class="works-image-left-outer">
+            <div class="works-image-left-wrapper js-trigger">
+                <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-header-image1.png.webp" class="works-image-left" alt="年間で600件">
+            </div>
+        </div>
+        <div class="works-image-right-outer">
+            <div class="works-image-right-wrapper js-trigger">
+                 <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/works-header-image2.png.webp" class="works-image-right" alt="累計8000件">
+            </div>
+        </div>
     </div>
     <div class="works-title">
         <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/heading_works.svg" alt="私達の施工実績の一部をご紹介します" class="for_pc section-title">

@@ -197,6 +197,12 @@
   .category_button-inner {
     font-size: 18px;
   }
+  .category_item:nth-child(2) .category_button.is-show {
+    animation: fadeIn 1s both;
+  }
+  .category_item:nth-child(3) .category_button.is-show {
+    animation: fadeIn 1s both;
+  }
   .advantage {
     display: block;
     max-width: 400px;
@@ -514,10 +520,73 @@
     position: relative;
   }
   .works-header {
-    width: 95vw;
+    width: 100vw;
+    height: 130px;
+    margin-left: -5vw;
     overflow: hidden;
     margin-bottom: 50px;
     display: flex;
+  }
+  .works-image-left-outer {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .works-image-right-outer {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s 1s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .works-image-left-wrapper,
+  .works-image-right-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    transform: translateX(-101%);
+    transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .works-image-right-wrapper {
+    transition: all 0.5s 1s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .works-image-left-wrapper::before,
+  .works-image-right-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e376f;
+    transform: translateX(0);
+    z-index: 1;
+    transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .works-image-right-wrapper::before {
+    transition: all 0.5s 1s cubic-bezier(0.5, 0, 0, 1);
+  }
+  .works-image-left-wrapper.is-show,
+  .works-image-right-wrapper.is-show {
+    transform: translateX(0);
+  }
+  .works-image-left-wrapper.is-show::before,
+  .works-image-right-wrapper.is-show::before {
+    transform: translateX(101%);
+    transition-delay: 0.5s;
+  }
+  .works-image-right-wrapper.is-show::before {
+    transition-delay: 1.5s;
+  }
+  .works-image-left,
+  .works-image-right {
+    width: 100%;
+    height: 100%;
   }
   .works-title {
     width: 100%;

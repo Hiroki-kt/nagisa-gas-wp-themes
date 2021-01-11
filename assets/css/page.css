@@ -114,6 +114,9 @@
   font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
   font-size: 16px;
 }
+.go-top-news:hover {
+  color: #d95920;
+}
 .go-top-news i {
   padding-right: 10px;
   font-size: 20px;
@@ -253,16 +256,16 @@
   cursor: pointer;
 }
 .category_button:focus {
-	outline:0;
+  outline: 0;
 }
 .category_button.is-show {
   animation: fadeIn 1s both;
 }
 .category_item:nth-child(2) .category_button.is-show {
-  animation: fadeIn 1s 0.5s both;
+  animation: fadeIn 1s 0.8s both;
 }
 .category_item:nth-child(3) .category_button.is-show {
-  animation: fadeIn 1s 1s both;
+  animation: fadeIn 1s 1.3s both;
 }
 .category_item:first-child .category_button {
   background-color: #fff;
