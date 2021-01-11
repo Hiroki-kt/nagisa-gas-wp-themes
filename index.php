@@ -227,9 +227,13 @@
         <img src="<?php echo $upload_dir[
           'baseurl'
         ]; ?>/2020/12/news-title-image.svg" alt="ナギサガス" class="news-header-image for_pc">
-        <img src="<?php echo $upload_dir[
-          'baseurl'
-        ]; ?>/2020/12/news-title-image.png.webp" alt="ナギサガス" class="news-header-image for_sp">
+        <div class="news-header-outer">
+            <div class="news-header-wrapper js-trigger">
+                <img src="<?php echo $upload_dir[
+                'baseurl'
+                ]; ?>/2020/12/news-title-image.png.webp" alt="ナギサガス" class="news-header-image for_sp">
+            </div>
+        </div>
         <img src="<?php echo $upload_dir[
           'baseurl'
         ]; ?>/2020/12/heading_news-sp.svg" alt="私達の最近の歩みを紹介します" class="news-header-title for_sp">
