@@ -175,9 +175,13 @@
         <div class="product-content-body">
             <div class="heater product-content-box">
                 <p class="product-item-title">-給湯器-</p>
-                <a href="<?php echo home_url(); ?>/product/gas/">
-                    <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/product-heater.png.webp" alt="給湯器">
-                </a>
+                <div class="product-card-image-outer">
+                    <div class="product-card-image-wrapper js-trigger">
+                        <a href="<?php echo home_url(); ?>/product/gas/">
+                            <img src="<?php echo $upload_dir['baseurl']; ?>/2021/01/product01.png.webp" class="product-card-image-inner" alt="給湯器">
+                        </a>
+                    </div>
+                </div>
                 <ul class="product-item-detail">
                     <li>・すぐにお湯がでない</li>
                     <li>・自由な温度にしたい</li>
@@ -185,9 +189,13 @@
             </div>
             <div class="bath product-content-box">
                 <p class="product-item-title">-浴室暖房乾燥機-</p>
-                <a href="<?php echo home_url(); ?>/product/bath/">
-                    <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/product-bath.png.webp" alt="浴室暖房乾燥機">
-                </a>
+                <div class="product-card-image-outer">
+                    <div class="product-card-image-wrapper js-trigger">
+                        <a href="<?php echo home_url(); ?>/product/bath/">
+                            <img src="<?php echo $upload_dir['baseurl']; ?>/2021/01/product02.png.webp" class="product-card-image-inner" alt="浴室暖房乾燥機">
+                        </a>  
+                    </div>
+                </div>
                 <ul class="product-item-detail">
                     <li>・冬場のお風呂が寒い</li>
                     <li>・洗濯物の乾きが悪い</li>
@@ -195,9 +203,13 @@
             </div>
             <div class="kitchen product-content-box">
                 <p class="product-item-title">-キッチン機器-</p>
-                <a href="<?php echo home_url(); ?>/product/kitchen/">
-                    <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/product-kitchen.png.webp" alt="キッチン機器">
-                </a>
+                <div class="product-card-image-outer">
+                    <div class="product-card-image-wrapper js-trigger">
+                        <a href="<?php echo home_url(); ?>/product/kitchen/">
+                            <img src="<?php echo $upload_dir['baseurl']; ?>/2021/01/product03.png.webp" class="product-card-image-inner" alt="キッチン機器">
+                         </a>
+                    </div>
+                </div>
                 <ul class="product-item-detail">
                     <li>・時短調理をしたい</li>
                     <li>・食器洗いが面倒だ</li>
@@ -205,9 +217,13 @@
             </div>
             <div class="toilet product-content-box">
                 <p class="product-item-title">-トイレタリー-</p>
-                <a href="<?php echo home_url(); ?>/product/toilet/">
-                    <img src="<?php echo $upload_dir['baseurl']; ?>/2020/12/product-toilet.png.webp" alt="トイレタリー">
-                </a>
+                <div class="product-card-image-outer">
+                    <div class="product-card-image-wrapper js-trigger">
+                        <a href="<?php echo home_url(); ?>/product/toilet/">
+                            <img src="<?php echo $upload_dir['baseurl']; ?>/2021/01/product04.png.webp" class="product-card-image-inner" alt="トイレタリー">
+                        </a>
+                    </div>
+                </div>
                 <ul class="product-item-detail">
                     <li>・温水洗浄を使いたい</li>
                     <li>・冬場の便座が寒い</li>
@@ -224,9 +240,13 @@
         <img src="<?php echo $upload_dir[
           'baseurl'
         ]; ?>/2020/12/heading_news.svg" alt="私達の最近の歩みを紹介します" class="for_pc section-title">
-        <img src="<?php echo $upload_dir[
-          'baseurl'
-        ]; ?>/2020/12/news-title-image.svg" alt="ナギサガス" class="news-header-image for_pc">
+        <div class="news-header-outer">
+            <div class="news-header-wrapper js-trigger">
+                <img src="<?php echo $upload_dir[
+                'baseurl'
+                ]; ?>/2021/01/news-title-image.jpg.webp" alt="ナギサガス" class="news-header-image for_pc">
+            </div>
+       </div>
         <div class="news-header-outer">
             <div class="news-header-wrapper js-trigger">
                 <img src="<?php echo $upload_dir[
